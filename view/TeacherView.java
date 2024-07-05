@@ -13,7 +13,7 @@ public class TeacherView {
     private TeacherController controller = new TeacherController();
 
     public void start() throws Exception {
-        DateBase.fillDB();
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("If you want to create an account, press 1: ");

@@ -12,20 +12,21 @@ public class StudentView {
     private StudentController controller = new StudentController();
 
     public void start(){
-        DateBase.fillDB();
         Scanner scanner = new Scanner(System.in);
         while(true){
 
             System.out.println("If you want to create an account, press 1: ");
             System.out.println("If you want to find a student by ID, press 2: ");
             System.out.println("If you want to see the list of students, press 3: ");
-            System.out.println("if you want to log out, press 4: ");
+            System.out.println();
+            System.out.println("if you want to log out, press 5: ");
 
             switch (scanner.nextInt()){
                 case 1 -> createUser();
                 case 2 -> getById();
                 case 3 -> getAllUsers();
-                case 4 -> System.exit(0);
+                case 4 -> new StudyGroupView().startView();
+                case 5 -> System.exit(0);
                 default -> System.out.println("Invalid input");
 
             }
