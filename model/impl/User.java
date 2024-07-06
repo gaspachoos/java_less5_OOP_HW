@@ -23,7 +23,8 @@ public abstract class User extends UserComparator<User> implements Comparable<Us
 
     @Override
     public String toString() {
-        return String.format(getClass().getSimpleName() + " = [id: %s, name: %s, lastName: %s]", id, name, lastName);
+        return String.format(getClass()
+                .getSimpleName() + " = [id: %s, name: %s, lastName: %s]", id, name, lastName);
     }
 
     @Override

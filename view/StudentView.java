@@ -18,7 +18,7 @@ public class StudentView {
             System.out.println("If you want to create an account, press 1: ");
             System.out.println("If you want to find a student by ID, press 2: ");
             System.out.println("If you want to see the list of students, press 3: ");
-            System.out.println();
+            System.out.println("If you want to join a study group, press 4");
             System.out.println("if you want to log out, press 5: ");
 
             switch (scanner.nextInt()){
